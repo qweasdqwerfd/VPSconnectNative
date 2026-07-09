@@ -1,4 +1,4 @@
-package com.example.vpsconnect.ui.theme
+package com.example.vpsconnect.utils
 
 import androidx.compose.ui.graphics.Color
 

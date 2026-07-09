@@ -1,4 +1,4 @@
-package com.example.vpsconnect.ui.theme
+package com.example.vpsconnect.utils
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle
