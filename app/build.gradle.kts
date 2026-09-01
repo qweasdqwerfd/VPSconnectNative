@@ -39,6 +39,8 @@ android {
 }
 
 dependencies {
+    implementation(libs.androidx.navigation)
+    implementation(libs.androidx.navigation.test)
     implementation(libs.json.serialization)
     implementation(platform(libs.androidx.compose.bom))
     implementation(libs.androidx.activity.compose)
