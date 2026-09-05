@@ -1,6 +1,6 @@
 package com.example.vpsconnect.presentation.screens
+
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -17,7 +17,6 @@ import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.vpsconnect.R
 import com.example.vpsconnect.presentation.common.components.ContainersCard
@@ -26,7 +25,7 @@ import com.example.vpsconnect.utils.dimens
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun ContainersScreen(innerPadding: PaddingValues, modifier: Modifier) {
+fun ContainersScreen(modifier: Modifier = Modifier) {
 
     val searchQuery = remember { TextFieldState("") }
 
@@ -72,8 +71,7 @@ fun ContainersScreen(innerPadding: PaddingValues, modifier: Modifier) {
         HorizontalDivider(
             modifier = Modifier
                 .fillMaxWidth()
-                .height(1.dp)
-            ,
+                .height(1.dp),
             color = MaterialTheme.colorScheme.surface
         )
 
@@ -93,12 +91,12 @@ fun ContainersScreen(innerPadding: PaddingValues, modifier: Modifier) {
             Text(
                 "prometheus",
                 style = MaterialTheme.typography.titleLarge.copy(fontWeight = FontWeight.Bold),
-                color = MaterialTheme.colorScheme.onSurface)
+                color = MaterialTheme.colorScheme.onSurface
+            )
 
             Spacer(modifier.height(MaterialTheme.dimens.space20))
 
             ContainersCard()
-
 
 
         }

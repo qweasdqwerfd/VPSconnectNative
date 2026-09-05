@@ -4,9 +4,10 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
+import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
-import com.example.vpsconnect.presentation.screens.ContainersScreen
+import com.example.vpsconnect.presentation.navigation.NavGraph
 import com.example.vpsconnect.utils.VPSConnectTheme
 
 class MainActivity : ComponentActivity() {
@@ -17,7 +18,7 @@ class MainActivity : ComponentActivity() {
             VPSConnectTheme {
 
                 Scaffold(modifier = Modifier) { innerPadding ->
-                    ContainersScreen(innerPadding, modifier = Modifier)
+                    NavGraph(modifier = Modifier.padding(innerPadding))
                 }
 
             }
